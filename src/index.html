@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+  </head>
+  <body>
+    <nav>
+      <div
+        class="contain px-3 xl:px-0 max-w-[65.625rem] mx-auto flex justify-between items-center py-7 relative"
+      >
+        <div class="logo">
+          <a class="" href="/src/index.html">
+            <img src="images/logo.png" alt="images/logo.png"
+          /></a>
+        </div>
+        <div class="menu hidden sm:block">
+          <ul
+            class="font-Montserrat font-bold text-sm text-secondary-text flex gap-x-5"
+          >
+            <li><a class="hover:text-black" href="#">Home</a></li>
+            <li><a class="hover:text-black" href="#">Product</a></li>
+            <li><a class="hover:text-black" href="#">Pricing</a></li>
+            <li><a class="hover:text-black" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div
+          id="small_menu"
+          class="hidden sm:hidden absolute top-16 right-0 text-end bg-primary/25 p-3 rounded-2xl"
+        >
+          <ul
+            class="font-Montserrat font-bold text-sm text-secondary-text flex flex-col gap-y-3"
+          >
+            <li><a class="hover:text-black" href="#">Home</a></li>
+            <li><a class="hover:text-black" href="#">Product</a></li>
+            <li><a class="hover:text-black" href="#">Pricing</a></li>
+            <li><a class="hover:text-black" href="#">Contact</a></li>
+          </ul>
+          <div class="btn mt-4 flex flex-row-reverse gap-4">
+            <a
+              href="#"
+              class="font-Montserrat font-bold hover:bg-primary/20 py-2 md:py-4 px-3 md:px-6 text-primary rounded-lg transition-all duration-300 inline-block border border-primary"
+            >
+              login
+            </a>
+            <a
+              href="#"
+              class="font-Montserrat font-bold text-white py-2 md:py-4 px-3 md:px-6 bg-primary rounded-lg hover:bg-primary/30 hover:!text-primary transition-all duration-300 inline-block"
+            >
+              JOIN US
+            </a>
+          </div>
+        </div>
+        <div class="login hidden sm:block">
+          <a
+            href="#"
+            class="font-Montserrat font-bold hover:bg-primary/20 py-2 md:py-4 px-3 md:px-6 text-primary rounded-lg transition-all duration-300 inline-block"
+          >
+            login
+          </a>
+          <a
+            href="#"
+            class="font-Montserrat font-bold text-white py-2 md:py-4 px-3 md:px-6 bg-primary rounded-lg hover:bg-primary/30 hover:!text-primary transition-all duration-300 inline-block"
+          >
+            JOIN US
+          </a>
+        </div>
+        <div
+          onclick="toggle('small_menu' , 'hidden' , 'block')"
+          class="text-secondary-text sm:hidden"
+        >
+          <i class="fa-solid fa-sort-down text-3xl"></i>
+        </div>
+      </div>
+    </nav>
+    <section id="banner">
+      <div
+        class="contain px-3 py-6 md:py-11 max-w-[77rem] gap-x-8 flex flex-col sm:flex-row justify-between items-center mx-auto"
+      >
+        <div class="left md:w-1/2 flex flex-col gap-y-4 md:gap-y-7">
+          <span class="font-Montserrat font-bold text-primary">Welcome</span>
+          <h1
+            class="font-Montserrat font-bold text-4xl sm:text-5xl md:text-6xl text-primary-text lg:leading-[5rem]"
+          >
+            Online Appoinment
+          </h1>
+          <p class="font-Montserrat sm:text-xl text-secondary-text">
+            Medical Functional is most focused in helping you discover your most
+            beauiful smile
+          </p>
+          <div class="btn gap-x-2.5">
+            <button
+              class="py-2 md:py-4 px-5 md:px-10 rounded-lg bg-primary text-white hover:text-black transition-all duration-500"
+            >
+              Get Quote Now
+            </button>
+            <button
+              class="py-2 md:py-4 px-5 md:px-10 rounded-lg text-primary border border-primary hover:bg-primary hover:text-white transition-all duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="right w-1/2 hidden md:flex">
+          <img src="images/banner.jpg" alt="images/banner.jpg" />
+        </div>
+      </div>
+    </section>
+    <section id="activity">
+      <div
+        class="contain max-w-[65.625rem] px-3 xl:px-0 py-10 lg:py-14 xl:py-40 mx-auto flex flex-col gap-y-10 md:gap-y-20"
+      >
+        <div class="top flex flex-col gap-y-2.5">
+          <span class="font-Montserrat font-bold text-sm text-primary"
+            >Practice Advice</span
+          >
+          <h2 class="font-Montserrat font-bold text-[2.5rem] text-primary-text">
+            Our Activity
+          </h2>
+          <p
+            class="max-w-[29rem] font-Montserrat text-sm leading-5 text-secondary-text"
+          >
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div
+          class="bottom flex flex-col sm:flex-row gap-y-4 gap-x-7 justify-between"
+        >
+          <div class="card flex flex-col items-center sm:items-start !gap-y-3 sm:gap-y-5">
+            <div>
+              <img src="images/activity1.jpg" alt="images/activity1.jpg" />
+            </div>
+            <h2 class="font-Montserrat font-bold text-primary-text">
+              Emergency Case
+            </h2>
+            <div class="h-0.5 w-12 bg-red-500"></div>
+            <p
+              class="font-Montserrat text-sm text-secondary-text w-72 text-center sm:text-start sm:w-36"
+            >
+              The gradual accumulation of information about
+            </p>
+          </div>
+          <div class="card flex flex-col items-center sm:items-start !gap-y-3 sm:gap-y-5">
+            <div>
+              <img src="images/activity2.jpg" alt="images/activity2.jpg" />
+            </div>
+            <h2 class="font-Montserrat font-bold text-primary-text">
+              Emergency Case
+            </h2>
+            <div class="h-0.5 w-12 bg-red-500"></div>
+            <p
+              class="font-Montserrat text-sm text-secondary-text w-72 text-center sm:text-start sm:w-36"
+            >
+              The gradual accumulation of information about
+            </p>
+          </div>
+          <div class="card flex flex-col items-center sm:items-start !gap-y-3 sm:gap-y-5">
+            <div>
+              <img src="images/activity3.jpg" alt="images/activity3.jpg" />
+            </div>
+            <h2 class="font-Montserrat font-bold text-primary-text">
+              Emergency Case
+            </h2>
+            <div class="h-0.5 w-12 bg-red-500"></div>
+            <p
+              class="font-Montserrat text-sm text-secondary-text w-72 text-center sm:text-start sm:w-36"
+            >
+              The gradual accumulation of information about
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="leading">
+      <div
+        class="contain max-w-[65.625rem] px-3 xl:px-0 mx-auto py-10 lg:py-14 xl:py-40 flex flex-col sm:flex-row gap-x-7 items-center"
+      >
+        <div class="text flex flex-col gap-y-3 sm:gap-y-6 md:gap-y-9 sm:w-1/2">
+          <div class="h-2 w-24 bg-red-500"></div>
+          <h2 class="font-Montserrat font-bold text-[2.5rem] text-primary-text">
+            Leading Medicine
+          </h2>
+          <p
+            class="font-Montserrat text-sm leading-5 text-secondary-text max-w-[21.5625rem]"
+          >
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+          <div class="font-Montserrat font-bold text-sm text-primary">
+            <a class="block" href="#">
+              Learn More
+              <i class="fa-solid fa-angle-right fa-fw"></i>
+            </a>
+          </div>
+        </div>
+        <div class="img sm:w-1/2">
+          <img src="images/leading.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="doctors">
+      <div
+        class="contain max-w-[65.625rem] px-3 xl:px-0 mx-auto py-10 lg:py-14 xl:py-40 gap-y-10 md:gap-y-20 flex flex-col"
+      >
+        <div class="head flex flex-col gap-y-2.5">
+          <span class="font-Montserrat font-bold text-sm text-primary"
+            >Practice Advice</span
+          >
+          <h2 class="font-Montserrat font-bold text-[2.5rem] text-primary-text">
+            Our Doctors Specialize in you
+          </h2>
+          <p
+            class="max-w-[29rem] font-Montserrat text-sm leading-5 text-secondary-text"
+          >
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="card flex flex-col sm:flex-row gap-2.5">
+          <div
+            class="w-full sm:w-1/3 group hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="img relative">
+              <img
+                class="w-full"
+                src="images/doctor1.jpg"
+                alt="images/doctor1.jpg"
+              />
+              <p
+                class="absolute bg-red-500 text-white px-2.5 top-0 left-0 translate-x-5 translate-y-5"
+              >
+                sale
+              </p>
+              <div
+                class="logo absolute text-primary-text text-xl flex gap-x-2.5 bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+              >
+                <i
+                  class="fa-regular fa-heart p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+                <i
+                  class="fa-solid fa-eye p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+              </div>
+            </div>
+            <div class="text p-6 flex flex-col gap-y-4">
+              <div class="title flex justify-between items-center">
+                <p class="font-Montserrat font-bold text-sm text-primary">
+                  English Department
+                </p>
+                <div
+                  class="rating p-1.5 bg-primary-text rounded-2xl flex gap-x-1"
+                >
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <p class="font-Montserrat text-xs text-white">4.9</p>
+                </div>
+              </div>
+              <h2 class="font-Montserrat font-bold text-primary-text">
+                Graphic Design
+              </h2>
+              <p class="font-Montserrat text-sm text-secondary-text">
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+              <div
+                class="sale font-Montserrat font-bold text-sm text-secondary-text flex gap-x-2.5"
+              >
+                <i class="fa-solid fa-download"></i>
+                <p>15 Sales</p>
+              </div>
+              <div class="price font-Montserrat font-bold flex gap-x-1.5">
+                <p class="text-[#BDBDBD]">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  16.48
+                </p>
+                <p class="text-[#40BB15]">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  16.48
+                </p>
+              </div>
+              <div
+                class="detail flex flex-col gap-y-1 xl:flex-row justify-between font-Montserrat text-xs text-secondary-text"
+              >
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-regular fa-clock text-blue-400"></i>
+                  22hr 30min
+                </p>
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-solid fa-person-chalkboard text-red-400"></i>
+                  64 Lessons
+                </p>
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-solid fa-bars-progress text-green-400"></i>
+                  Progress
+                </p>
+              </div>
+              <div class="btn">
+                <a
+                  class="inline-block font-Montserrat font-bold text-sm text-primary py-2.5 px-5 border border-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+                  href="#"
+                >
+                  Learn More
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/3 group hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="img relative">
+              <img
+                class="w-full"
+                src="images/doctor2.jpg"
+                alt="images/doctor2.jpg"
+              />
+              <p
+                class="absolute bg-red-500 text-white px-2.5 top-0 left-0 translate-x-5 translate-y-5"
+              >
+                sale
+              </p>
+              <div
+                class="logo absolute text-primary-text text-xl flex gap-x-2.5 bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+              >
+                <i
+                  class="fa-regular fa-heart p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+                <i
+                  class="fa-solid fa-eye p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+              </div>
+            </div>
+            <div class="text p-6 flex flex-col gap-y-4">
+              <div class="title flex justify-between items-center">
+                <p class="font-Montserrat font-bold text-sm text-primary">
+                  English Department
+                </p>
+                <div
+                  class="rating p-1.5 bg-primary-text rounded-2xl flex gap-x-1"
+                >
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <p class="font-Montserrat text-xs text-white">4.9</p>
+                </div>
+              </div>
+              <h2 class="font-Montserrat font-bold text-primary-text">
+                Graphic Design
+              </h2>
+              <p class="font-Montserrat text-sm text-secondary-text">
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+              <div
+                class="sale font-Montserrat font-bold text-sm text-secondary-text flex gap-x-2.5"
+              >
+                <i class="fa-solid fa-download"></i>
+                <p>15 Sales</p>
+              </div>
+              <div class="price font-Montserrat font-bold flex gap-x-1.5">
+                <p class="text-[#BDBDBD]">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  16.48
+                </p>
+                <p class="text-[#40BB15]">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  16.48
+                </p>
+              </div>
+              <div
+                class="detail flex flex-col gap-y-1.5 xl:flex-row justify-between font-Montserrat text-xs text-secondary-text"
+              >
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-regular fa-clock text-blue-400"></i>
+                  22hr 30min
+                </p>
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-solid fa-person-chalkboard text-red-400"></i>
+                  64 Lessons
+                </p>
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-solid fa-bars-progress text-green-400"></i>
+                  Progress
+                </p>
+              </div>
+              <div class="btn">
+                <a
+                  class="inline-block font-Montserrat font-bold text-sm text-primary py-2.5 px-5 border border-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+                  href="#"
+                >
+                  Learn More
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/3 group hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="img relative">
+              <img
+                class="w-full"
+                src="images/doctor3.jpg"
+                alt="images/doctor3.jpg"
+              />
+              <p
+                class="absolute bg-red-500 text-white px-2.5 top-0 left-0 translate-x-5 translate-y-5"
+              >
+                sale
+              </p>
+              <div
+                class="logo absolute text-primary-text text-xl flex gap-x-2.5 bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+              >
+                <i
+                  class="fa-regular fa-heart p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+                <i
+                  class="fa-solid fa-eye p-2.5 bg-white rounded-full hover:text-white hover:bg-primary/25 transition-all duration-300"
+                ></i>
+              </div>
+            </div>
+            <div class="text p-6 flex flex-col gap-y-4">
+              <div class="title flex justify-between items-center">
+                <p class="font-Montserrat font-bold text-sm text-primary">
+                  English Department
+                </p>
+                <div
+                  class="rating p-1.5 bg-primary-text rounded-2xl flex gap-x-1"
+                >
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <p class="font-Montserrat text-xs text-white">4.9</p>
+                </div>
+              </div>
+              <h2 class="font-Montserrat font-bold text-primary-text">
+                Graphic Design
+              </h2>
+              <p class="font-Montserrat text-sm text-secondary-text">
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+              <div
+                class="sale font-Montserrat font-bold text-sm text-secondary-text flex gap-x-2.5"
+              >
+                <i class="fa-solid fa-download"></i>
+                <p>15 Sales</p>
+              </div>
+              <div class="price font-Montserrat font-bold flex gap-x-1.5">
+                <p class="text-[#BDBDBD]">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  16.48
+                </p>
+                <p class="text-[#40BB15]">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  16.48
+                </p>
+              </div>
+              <div
+                class="detail flex flex-col gap-y-1 xl:flex-row justify-between font-Montserrat text-xs text-secondary-text"
+              >
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-regular fa-clock text-blue-400"></i>
+                  22hr 30min
+                </p>
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-solid fa-person-chalkboard text-red-400"></i>
+                  64 Lessons
+                </p>
+                <p class="flex items-center gap-x-1">
+                  <i class="fa-solid fa-bars-progress text-green-400"></i>
+                  Progress
+                </p>
+              </div>
+              <div class="btn">
+                <a
+                  class="inline-block font-Montserrat font-bold text-sm text-primary py-2.5 px-5 border border-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+                  href="#"
+                >
+                  Learn More
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div
+        class="contain contain max-w-[65.625rem] px-3 xl:px-0 mx-auto py-10 lg:py-14 xl:py-40 gap-y-10 md:gap-y-20 flex flex-col"
+      >
+        <div class="head flex flex-col gap-y-2.5">
+          <span class="font-Montserrat font-bold text-sm text-primary"
+            >Practice Advice</span
+          >
+          <h2 class="font-Montserrat font-bold text-[2.5rem] text-primary-text">
+            Pricing
+          </h2>
+          <p
+            class="max-w-[29rem] font-Montserrat text-sm leading-5 text-secondary-text"
+          >
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="bottom flex gap-5 flex-col sm:flex-row">
+          <div
+            class="card w-full sm:w-1/3 px-8 md:px-10 py-12 flex flex-col gap-y-3 sm:gap-y-5 md:gap-y-7 lg:gap-y-9 hover:shadow-2xl border border-primary rounded-xl"
+          >
+            <div class="img">
+              <img src="images/price-heart.jpg" alt="images/price-heart.jpg" />
+            </div>
+            <h2 class="font-Montserrat font-bold text-2xl text-primary-text">
+              FREE
+            </h2>
+            <p class="font-Montserrat font-bold text-sm text-secondary-text">
+              Organize across all apps by hand
+            </p>
+            <div class="price">
+              <h3
+                class="font-Montserrat font-bold text-[2.5rem] leading-[3.125rem] text-primary"
+              >
+                19$
+              </h3>
+              <p class="font-Montserrat font-bold text-sm text-[#8EC2F2]">
+                Per Month
+              </p>
+            </div>
+            <p class="font-Montserrat font-bold text-sm text-secondary-text">
+              Slate helps you see how many more days you need...
+            </p>
+            <div class="btn">
+              <a
+                href="#"
+                class="inline-block py-1 sm:py-2 lg:py-4 px-3 sm:px-5 lg:px-10 bg-primary font-Montserrat font-bold text-white text-sm rounded-md hover:text-primary-text hover:bg-primary/75 transition-all duration-300"
+                >Try for free</a
+              >
+            </div>
+            <div class="feature">
+              <ul
+                class="font-Montserrat font-bold text-sm text-primary-text flex flex-col gap-y-4"
+              >
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-[#BDBDBD]"
+                    ></i>
+                    1GB Cloud storage
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-[#BDBDBD]"
+                    ></i>
+                    Email and community support
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="card w-full sm:w-1/3 px-8 md:px-10 py-12 flex flex-col gap-y-3 sm:gap-y-5 md:gap-y-7 lg:gap-y-9 hover:shadow-2xl border border-primary rounded-xl"
+          >
+            <div class="img">
+              <img src="images/price-heart.jpg" alt="images/price-heart.jpg" />
+            </div>
+            <h2 class="font-Montserrat font-bold text-2xl text-primary-text">
+              FREE
+            </h2>
+            <p class="font-Montserrat font-bold text-sm text-secondary-text">
+              Organize across all apps by hand
+            </p>
+            <div class="price">
+              <h3
+                class="font-Montserrat font-bold text-[2.5rem] leading-[3.125rem] text-primary"
+              >
+                19$
+              </h3>
+              <p class="font-Montserrat font-bold text-sm text-[#8EC2F2]">
+                Per Month
+              </p>
+            </div>
+            <p class="font-Montserrat font-bold text-sm text-secondary-text">
+              Slate helps you see how many more days you need...
+            </p>
+            <div class="btn">
+              <a
+                href="#"
+                class="inline-block py-1 sm:py-2 lg:py-4 px-3 sm:px-5 lg:px-10 bg-primary font-Montserrat font-bold text-white text-sm rounded-md hover:text-primary-text hover:bg-primary/75 transition-all duration-300"
+                >Try for free</a
+              >
+            </div>
+            <div class="feature">
+              <ul
+                class="font-Montserrat font-bold text-sm text-primary-text flex flex-col gap-y-4"
+              >
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-[#BDBDBD]"
+                    ></i>
+                    1GB Cloud storage
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-[#BDBDBD]"
+                    ></i>
+                    Email and community support
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="card w-full sm:w-1/3 px-8 md:px-10 py-12 flex flex-col gap-y-3 sm:gap-y-5 md:gap-y-7 lg:gap-y-9 hover:shadow-2xl border border-primary rounded-xl"
+          >
+            <div class="img">
+              <img src="images/price-heart.jpg" alt="images/price-heart.jpg" />
+            </div>
+            <h2 class="font-Montserrat font-bold text-2xl text-primary-text">
+              FREE
+            </h2>
+            <p class="font-Montserrat font-bold text-sm text-secondary-text">
+              Organize across all apps by hand
+            </p>
+            <div class="price">
+              <h3
+                class="font-Montserrat font-bold text-[2.5rem] leading-[3.125rem] text-primary"
+              >
+                19$
+              </h3>
+              <p class="font-Montserrat font-bold text-sm text-[#8EC2F2]">
+                Per Month
+              </p>
+            </div>
+            <p class="font-Montserrat font-bold text-sm text-secondary-text">
+              Slate helps you see how many more days you need...
+            </p>
+            <div class="btn">
+              <a
+                href="#"
+                class="inline-block py-1 sm:py-2 lg:py-4 px-3 sm:px-5 lg:px-10 bg-primary font-Montserrat font-bold text-white text-sm rounded-md hover:text-primary-text hover:bg-primary/75 transition-all duration-300"
+                >Try for free</a
+              >
+            </div>
+            <div class="feature">
+              <ul
+                class="font-Montserrat font-bold text-sm text-primary-text flex flex-col gap-y-4"
+              >
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-green-500"
+                    ></i>
+                    Unlimited product updates
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-[#BDBDBD]"
+                    ></i>
+                    1GB Cloud storage
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2.5" href="#">
+                    <i
+                      class="fa-solid fa-check p-1.5 rounded-full bg-[#BDBDBD]"
+                    ></i>
+                    Email and community support
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="review">
+      <div
+        class="contain contain max-w-[65.625rem] px-3 xl:px-0 mx-auto py-10 lg:py-14 xl:py-40 gap-y-10 md:gap-y-20 flex flex-col"
+      >
+        <div class="head flex flex-col gap-y-2.5">
+          <span class="font-Montserrat font-bold text-sm text-primary"
+            >Practice Advice</span
+          >
+          <h2 class="font-Montserrat font-bold text-[2.5rem] text-primary-text">
+            Each and every client is important
+          </h2>
+          <p
+            class="max-w-[29rem] font-Montserrat text-sm leading-5 text-secondary-text"
+          >
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="reviews flex flex-col sm:flex-row md:gap-x-2.5">
+          <div class="card w-full sm:w-1/3 lg:p-6">
+            <div class="review p-7 flex flex-col gap-y-4">
+              <div class="rating justify-center text-[#F3CD03] flex gap-x-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div
+                class="review_text font-Montserrat text-sm text-secondary-text w-40 text-center mx-auto"
+              >
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+            </div>
+            <div class="profile flex justify-center gap-x-4 items-center">
+              <div class="img">
+                <img src="images/review1.jpg" alt="images/review1.jpg" />
+              </div>
+              <div class="info">
+                <h2 class="font-Montserrat font-bold text-sm text-primary">
+                  Regina Miles
+                </h2>
+                <p class="font-Montserrat text-xs text-primary-text">
+                  Designer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full sm:w- lg:p-6">
+            <div class="review p-7 flex flex-col gap-y-4">
+              <div class="rating justify-center text-[#F3CD03] flex gap-x-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div
+                class="review_text font-Montserrat text-sm text-secondary-text w-40 text-center mx-auto"
+              >
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+            </div>
+            <div class="profile flex justify-center gap-x-4 items-center">
+              <div class="img">
+                <img src="images/review2.jpg" alt="images/review2.jpg" />
+              </div>
+              <div class="info">
+                <h2 class="font-Montserrat font-bold text-sm text-primary">
+                  Regina Miles
+                </h2>
+                <p class="font-Montserrat text-xs text-primary-text">
+                  Designer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full sm:w- lg:p-6">
+            <div class="review p-7 flex flex-col gap-y-4">
+              <div class="rating justify-center text-[#F3CD03] flex gap-x-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div
+                class="review_text font-Montserrat text-sm text-secondary-text w-40 text-center mx-auto"
+              >
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+            </div>
+            <div class="profile flex justify-center gap-x-4 items-center">
+              <div class="img">
+                <img src="images/review1.jpg" alt="images/review1.jpg" />
+              </div>
+              <div class="info">
+                <h2 class="font-Montserrat font-bold text-sm text-primary">
+                  Regina Miles
+                </h2>
+                <p class="font-Montserrat text-xs text-primary-text">
+                  Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="review">
+      <div
+        class="contain contain max-w-[65.625rem] px-3 xl:px-0 mx-auto py-10 lg:py-14 xl:py-40 gap-y-5 md:gap-y-10 xl:gap-y-20 flex flex-col"
+      >
+        <div class="head text-center flex flex-col sm:gap-y-2.5">
+          <span class="font-Montserrat font-bold text-sm text-primary"
+            >Newsletter</span
+          >
+          <h2 class="font-Montserrat font-bold text-[2.5rem] text-primary-text">
+            JOIN US
+          </h2>
+          <p
+            class="max-w-[29rem] mx-auto font-Montserrat text-sm leading-5 text-secondary-text"
+          >
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div
+          class="input sm:px-5 md:px-20 w-full lg:px-10 sm:mx-auto flex lg:w-[43rem]"
+        >
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="placeholder:font-Montserrat placeholder:text-sm placeholder:text-secondary-text w-5/6 bg-slate-200 py-4 px-4 rounded-lg"
+          />
+          <button>
+            <a
+              href="#"
+              class="inline-block hover:bg-primary/75 bg-primary py-4 px-6 rounded-lg text-white hover:text-primary-text transition-all duration-300"
+              >Subscribe</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contain contain max-w-[65.625rem] mx-auto px-3 xl:px-0">
+        <div class="list py-3 sm:py-6 md:py-9 lg:py-12">
+          <ul
+            class="font-Montserrat font-bold text-sm text-secondary-text grid sm:grid-cols-6 sm:grid-rows-1 gap-x-7 gap-y-10"
+          >
+            <li class="col-span-1 flex flex-col gap-4">
+              <p class="text-base text-primary-text">Company Info</p>
+              <ul class="flex flex-col gap-y-2.5">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Carrier</a></li>
+                <li><a href="#">We are hiring</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="col-span-1 flex flex-col gap-4">
+              <p class="text-base text-primary-text">Legal</p>
+              <ul class="flex flex-col gap-y-2.5">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Carrier</a></li>
+                <li><a href="#">We are hiring</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="col-span-1 flex flex-col gap-4">
+              <p class="text-base text-primary-text">Features</p>
+              <ul class="flex flex-col gap-y-2.5">
+                <li><a href="#">Business Marketing</a></li>
+                <li><a href="#">User Analytic</a></li>
+                <li><a href="#">Live Chat</a></li>
+                <li><a href="#">Unlimited Support</a></li>
+              </ul>
+            </li>
+            <li class="col-span-1 flex flex-col gap-4">
+              <p class="text-base text-primary-text">Resources</p>
+              <ul class="flex flex-col gap-y-2.5">
+                <li><a href="#">IOS & Android</a></li>
+                <li><a href="#">Watch a Demo</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">API</a></li>
+              </ul>
+            </li>
+            <li class="col-span-2 flex flex-col gap-4">
+              <p class="text-base text-primary-text">Get In Touch</p>
+              <ul class="flex flex-col gap-y-2.5">
+                <li>
+                  <a href="#" class="flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-primary text-2xl"></i>
+                    <p>(480) 555-0103</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-4" href="#">
+                    <i
+                      class="fa-solid fa-location-dot text-primary text-2xl"
+                    ></i>
+                    4517 Washington Ave. Manchester, Kentucky 39495
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-4" href="#">
+                    <i class="fa-solid fa-envelope text-primary text-2xl"></i>
+                    debra.holt@example.com
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="copyRight flex flex-col sm:flex-row gap-y-3 justify-center sm:justify-between py-6"
+        >
+          <p class="font-Montserrat font-bold text-sm text-secondary-text">
+            Made With Love By Figmaland All Right Reserved
+          </p>
+          <div class="links text-2xl text-primary flex gap-x-5">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggle(id, remove, add) {
+        let element = document.getElementById(id);
+        if (element.classList.contains(remove)) {
+          element.classList.add(add);
+          element.classList.remove(remove);
+        } else {
+          element.classList.remove(add);
+          element.classList.add(remove);
+        }
+      }
+    </script>
+  </body>
+</html>
